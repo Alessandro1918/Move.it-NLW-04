@@ -1,0 +1,32 @@
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+.experienceBar span {
+    font-size: 1rem;
+}
+
+/* First div, the gray background */
+.experienceBar > div {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+/* Second div, the colored background */
+.experienceBar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--blue);
+}
+
+/* Number of XP points */
+span.currentExperience {
+    position: absolute;
+    top: 12px;
+    transform: translate(-50%);
+}
