@@ -22,7 +22,7 @@ let countdownTimeout: NodeJS.Timeout
 //This component is used only once, on index.tsx, to grand data access to the components @ index.tsx between lines 25-37
 export function CountdownProvider({children}: CountdownProviderProps) {
     
-    const [time, setTime] = useState(0.05 * 60)
+    const [time, setTime] = useState(25 * 60)
     const min = Math.floor(time / 60)
     const sec = time % 60
     const [hasFinished, setHasFinished] = useState(false)
@@ -36,7 +36,7 @@ export function CountdownProvider({children}: CountdownProviderProps) {
         clearTimeout(countdownTimeout)
         setHasFinished(false)
         setIsActive(false)
-        setTime(0.05 * 60)
+        setTime(25 * 60)
     }
 
     const { startNewChallenge } = useContext(ChallengesContext)
