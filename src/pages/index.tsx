@@ -23,7 +23,7 @@ export default function Home(props: homeProps) {
   //API call to some db here:
   //Search Engines won`t wait for that async call, and the page won`t be indexed with the data
 
-  //console.log(props)  //Will output on the brownser`s Console Terminal (and also on the VS Code terminal)
+  //console.log(props)  //Will output on the browser`s Console Terminal (and also on the VS Code terminal)
 
   return (
 
