@@ -19,7 +19,7 @@ export const CountdownContext = createContext({} as CountdownContextData)
 
 let countdownTimeout: NodeJS.Timeout
 
-//This component is used only once, on index.tsx, to grand data access to the components @ index.tsx between lines 25-37
+//This component is used only once, on index.tsx, to grand data access to the components @ index.tsx between lines 44-56
 export function CountdownProvider({children}: CountdownProviderProps) {
     
     const [time, setTime] = useState(25 * 60)
